@@ -82,6 +82,7 @@ p {
     display: flex;
     flex-flow: row wrap;
     padding: 10px;
+    justify-content: center;
 }
 
 .art__item {
@@ -100,6 +101,7 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    justify-content: center;
 }
 
 .art__des__item {
