@@ -22,3 +22,135 @@ p {
     line-height: 26px;
     text-align: center;
 }
+
+
+/* TOP */
+
+.top__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.top__flex {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+
+/* TOP NAVIGATION */
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+    border-bottom: 2px solid #fff;
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid #ddd;
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+
+/* MAIN */
+
+.main__gallery {
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+
+.art__item {
+    margin: 10px;
+    order: 3;
+    flex-grow: 3;
+}
+
+.art__item img {
+    border-radius: 8px;
+    border: 0.5px solid #f1f1f1;
+    padding: 10px;
+}
+
+.art__description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.art__des__item {
+    order: 2;
+    flex-grow: 2;
+    flex-flow: row nowrap;
+}
+
+.left {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #353535;
+    width: 170px;
+}
+
+.right {
+    margin: 10px;
+    text-align: right;
+    width: 135px;
+}
+
+.buy__button {
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.buy__button:hover {
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #000;
+    color: black;
+}
+
+.sold__button {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 6px;
+    -moz-border-radious: 6px;
+    -webkit-border-radious: 6px;
+    -ms-border-radious: 6px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #000;
+}
