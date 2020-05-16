@@ -1,5 +1,4 @@
 body {
-    background-color: white;
     font-family: 'Roboto', "helvetica neue", Helvetica, Arial, sans-serif;
 }
 
@@ -175,6 +174,22 @@ a:hover
 
 
 /* ABOUT ME */
+
+@media all and (min-width: 400px) {
+    html {
+        background: url(../img/icons/coffee__back.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        background-color: white;
+    }
+}
 
 .main__content {
     margin: 80px 50px;
