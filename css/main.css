@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', "helvetica neue", Helvetica, Arial, sans-serif;
+    background-color: white;
 }
 
 .container {
@@ -175,6 +176,8 @@ a:hover
 
 /* ABOUT ME */
 
+
+/*
 @media all and (min-width: 400px) {
     html {
         background: url(../img/icons/coffee__back.jpg) no-repeat center center fixed;
@@ -189,7 +192,7 @@ a:hover
     html {
         background-color: white;
     }
-}
+}*/
 
 .main__content {
     margin: 80px 50px;
