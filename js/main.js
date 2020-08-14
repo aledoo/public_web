@@ -126,7 +126,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "michael jordan",
+        artworkTitle: "jordan",
         typeformID: "LTflaQ",
         buttonText: "SOLD",
         colors: "25",
