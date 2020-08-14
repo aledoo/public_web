@@ -9,7 +9,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Elephant",
+        artworkTitle: "elephant",
         typeformID: "BwS7hGo4",
         buttonText: "BUY 100€",
         colors: "25",
@@ -18,7 +18,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Bailaor",
+        artworkTitle: "bailaor",
         typeformID: "MWMpcKBS",
         buttonText: "BUY 100€",
         colors: "26",
@@ -27,7 +27,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Something going on",
+        artworkTitle: "something going on",
         typeformID: "QHkceWuA",
         buttonText: "BUY 100€",
         colors: "23",
@@ -36,7 +36,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Still life",
+        artworkTitle: "still life",
         typeformID: "kSncHn",
         buttonText: "BUY 100€",
         colors: "25",
@@ -45,7 +45,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Jacqueline y las flores",
+        artworkTitle: "jacqueline y las flores",
         typeformID: "tljae1",
         buttonText: "SOLD",
         colors: "25",
@@ -54,7 +54,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Woman on a sofa",
+        artworkTitle: "woman on a sofa",
         typeformID: "ynCgtQ",
         buttonText: "BUY 100€",
         colors: "32",
@@ -63,7 +63,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Portrait",
+        artworkTitle: "portrait",
         typeformID: "LTflaQ",
         buttonText: "SOLD",
         colors: "25",
@@ -72,7 +72,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Rider",
+        artworkTitle: "rider",
         typeformID: "LTflaQ",
         buttonText: "SOLD",
         colors: "25",
@@ -81,7 +81,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Bottle",
+        artworkTitle: "bottle",
         typeformID: "T97Las",
         buttonText: "BUY 100€",
         colors: "26",
@@ -90,7 +90,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Cheeses",
+        artworkTitle: "cheeses",
         typeformID: "fMgs1H",
         buttonText: "BUY 100€",
         colors: "25",
@@ -99,7 +99,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Applauses",
+        artworkTitle: "applauses",
         typeformID: "FYxAvg",
         buttonText: "BUY 100€",
         colors: "17",
@@ -108,7 +108,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Travelling",
+        artworkTitle: "travelling",
         typeformID: "x6819A",
         buttonText: "BUY 100€",
         colors: "24",
@@ -117,7 +117,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Shirts",
+        artworkTitle: "shirts",
         typeformID: "LTflaQ",
         buttonText: "SOLD",
         colors: "25",
@@ -126,7 +126,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Michael Jordan",
+        artworkTitle: "michael Jordan",
         typeformID: "LTflaQ",
         buttonText: "SOLD",
         colors: "25",
@@ -135,7 +135,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "The Pianist",
+        artworkTitle: "the pianist",
         typeformID: "LTflaQ",
         buttonText: "SOLD",
         colors: "25",
@@ -144,7 +144,7 @@ const artWork = [
         paperQuality: "90"
     },
     {
-        artworkTitle: "Tango",
+        artworkTitle: "tango",
         typeformID: "LTflaQ",
         buttonText: "SOLD",
         colors: "",
@@ -153,7 +153,7 @@ const artWork = [
         paperQuality: ""
     },
     {
-        artworkTitle: "Cats",
+        artworkTitle: "cats",
         typeformID: "LTflaQ",
         buttonText: "SOLD",
         colors: "",
@@ -162,7 +162,7 @@ const artWork = [
         paperQuality: ""
     },
     {
-        artworkTitle: "Women",
+        artworkTitle: "women",
         typeformID: "LTflaQ",
         buttonText: "SOLD",
         colors: "25",
