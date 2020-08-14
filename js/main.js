@@ -1,6 +1,6 @@
 const artWork = [
     {
-        artworkTitle: "Falling in love",
+        artworkTitle: "falling in love",
         typeformID: "bi6F9pEy",
         buttonText: "BUY 100€",
         colors: "25",
