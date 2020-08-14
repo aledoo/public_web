@@ -125,7 +125,6 @@ a:hover
     flex-grow: 2;
     flex-flow: row nowrap;
 }
-
 .left {
     margin: 10px 0;
     padding: 10px;
@@ -134,7 +133,9 @@ a:hover
     color: #353535;
     width: 170px;
 }
-
+.left::first-letter {
+    text-transform: capitalize;
+}
 .right {
     margin: 10px;
     text-align: right;
