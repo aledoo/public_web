@@ -173,16 +173,7 @@
     
 //   ];
 
-// Fetch JSON
-fetch("./data.json") 
-    .then(function(resp) {
-        return resp.json();
-    })
-    .then (function(data) {
-        document.getElementById("list").innerHTML = `
-            ${artWork.map(artTemplate).join('')}
-        ` 
-    });
+
 
 // Replace underscore on the images if it is need it
 function image(underscore) {
@@ -239,3 +230,14 @@ function artTemplate(art) {
 // document.getElementById("list").innerHTML = `
 //     ${artWork.map(artTemplate).join('')}
 // `
+
+// Fetch JSON
+fetch("./data.json") 
+    .then(function(resp) {
+        return resp.json();
+    })
+    .then (function(data) {
+        document.getElementById("list").innerHTML = `
+            ${data.map(artTemplate).join('')}
+        ` 
+    });
