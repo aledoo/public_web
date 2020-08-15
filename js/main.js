@@ -232,7 +232,7 @@ function artTemplate(artWorks) {
                 <span><strong>${artWorks.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artWorks.buttonText}
+                ${artSoldOrNot(artWorks.buttonText)}
             </div>
         </div>
     </div>
