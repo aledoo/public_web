@@ -182,7 +182,7 @@ fetch("/js/data.json")
         // document.getElementById("list").innerHTML = `
         //     ${data.map(artTemplate).join('')}
         // ` 
-        let artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
+        var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
     })
     .catch(function(error) {
         console.log(error);
@@ -204,9 +204,9 @@ function artworkSold(soldText) {
 };
 
 // Build the link for selling artwork
-function soldLink(params) {
+function soldLink(artWorks) {
     return `
-        https://alexdolara.typeform.com/to/${params.typeformID}?id=${params.typeformID}&title=${whiteSpaceTitle(params.artworkTitle)}&colors=${params.colors}&artsize=${params.artSize}&framesize=${params.frameSize}&paperquality=${params.paperQuality}"
+        https://alexdolara.typeform.com/to/${artWorks.typeformID}?id=${artWorks.typeformID}&title=${whiteSpaceTitle(artWorks.artworkTitle)}&colors=${artWorks.colors}&artsize=${artWorks.artSize}&framesize=${artWorks.frameSize}&paperquality=${artWorks.paperQuality}"
     `
 };
 
@@ -215,7 +215,7 @@ function artSoldOrNot(artworkStatus) {
     if (artworkStatus == "SOLD") {
         return `<span class="sold__button">${artworkStatus}</span>`
     } else {
-        return `<a href="${soldLink(artWorks)}" target="_blank" class="buy__button">${artworkStatus}</a>`
+        return `<a href="${soldLink()}" target="_blank" class="buy__button">${artworkStatus}</a>`
     }
 };
 
