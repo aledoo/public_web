@@ -204,9 +204,9 @@ function artworkSold(soldText) {
 };
 
 // Build the link for selling artwork
-function soldLink(json) {
+function soldLink(artWorks) {
     return `
-        https://alexdolara.typeform.com/to/${json.typeformID}?id=${json.typeformID}&title=${whiteSpaceTitle(json.artworkTitle)}&colors=${json.colors}&artsize=${json.artSize}&framesize=${json.frameSize}&paperquality=${json.paperQuality}"
+        https://alexdolara.typeform.com/to/${artWorks.typeformID}?id=${artWorks.typeformID}&title=${whiteSpaceTitle(artWorks.artworkTitle)}&colors=${artWorks.colors}&artsize=${artWorks.artSize}&framesize=${artWorks.frameSize}&paperquality=${artWorks.paperQuality}"
     `
 };
 
