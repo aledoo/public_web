@@ -173,6 +173,21 @@
     
 //   ];
 
+// Fetch JSON
+fetch("/js/data.json") 
+    .then(function(resp) {
+        return resp.json();
+    })
+    .then(function(data) {
+        // document.getElementById("list").innerHTML = `
+        //     ${data.map(artTemplate).join('')}
+        // ` 
+        var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+
 // Replace underscore on the images if it is need it
 function image(underscore) {
     return underscore.replace(/\s/g, '_')
@@ -229,17 +244,3 @@ function artTemplate(artWorks) {
 //     ${artWork.map(artTemplate).join('')}
 // `
 
-// Fetch JSON
-fetch("/js/data.json") 
-    .then(function(resp) {
-        return resp.json();
-    })
-    .then(function(data) {
-        // document.getElementById("list").innerHTML = `
-        //     ${data.map(artTemplate).join('')}
-        // ` 
-        var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
-    })
-    .catch(function(error) {
-        console.log(error);
-    });
