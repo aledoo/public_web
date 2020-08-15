@@ -1,4 +1,4 @@
-const artWork = [
+data = [
     {
         artworkTitle: "falling in love",
         typeformID: "bi6F9pEy",
@@ -169,6 +169,5 @@ const artWork = [
         artSize: "21x29,7",
         frameSize: "30x40",
         paperQuality: "90"
-    }
-    
+    } 
   ];
