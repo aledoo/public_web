@@ -212,7 +212,11 @@ function soldLink(linkParams) {
 
 // Check if the artwork is sold or not
 function artSoldOrNot(artworkStatus) {
-    return `<span class="sold__button">${artworkStatus}</span>`
+    if (artworkStatus == "SOLD") {
+        return `<span class="sold__button">${artworkStatus}</span>`
+    } else {
+        return `<a href="${soldLink()}" target="_blank" class="buy__button">${artworkStatus}</a>`
+    }
 };
 
 // Build the list of artworks
@@ -228,11 +232,7 @@ function artTemplate(artWorks) {
                 <span><strong>${artWorks.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artWorks.status ? artSoldOrNot(artWorks.status) : 
-                    `
-                    <a href="https://alexdolara.typeform.com/to/${artWorks.typeformID}?id=${artWorks.typeformID}&title=${whiteSpaceTitle(artWorks.artworkTitle)}&colors=${artWorks.colors}&artsize=${artWorks.artSize}&framesize=${artWorks.frameSize}&paperquality=${artWorks.paperQuality}" target="_blank" class="buy__button">${artworkStatus}</a>
-                    `
-                }
+                <a href="https://alexdolara.typeform.com/to/${linkParams.typeformID}?id=${linkParams.typeformID}&title=${whiteSpaceTitle(linkParams.artworkTitle)}&colors=${linkParams.colors}&artsize=${linkParams.artSize}&framesize=${linkParams.frameSize}&paperquality=${linkParams.paperQuality}" target="_blank" class="buy__button">${artworkStatus}</a>
             </div>
         </div>
     </div>
