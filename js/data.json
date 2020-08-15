@@ -47,7 +47,8 @@
     {
         "artworkTitle": "jacqueline y las flores",
         "typeformID": "tljae1",
-        "buttonText": "SOLD",
+        "buttonText": "BUY 100",
+        "status": "SOLD",
         "colors": "25",
         "artSize": "21x29,7",
         "frameSize": "30x40",
