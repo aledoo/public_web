@@ -232,7 +232,7 @@ function artTemplate(art) {
 // `
 
 // Fetch JSON
-fetch("./data.json") 
+fetch('data.JSON') 
     .then(function(resp) {
         return resp.json();
     })
@@ -240,5 +240,5 @@ fetch("./data.json")
         // document.getElementById("list").innerHTML = `
         //     ${data.map(artTemplate).join('')}
         // ` 
-        console.log(data.paperQuality);
+        console.log(data.artworkTitle);
     });
