@@ -217,7 +217,7 @@ function artTemplate(json) {
                 <span><strong>${json.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${json.buttonText}
+                ${artSoldOrNot(json.buttonText)}
             </div>
         </div>
     </div>
