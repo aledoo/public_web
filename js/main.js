@@ -228,7 +228,7 @@ function artTemplate(artWorks) {
                 <span><strong>${artWorks.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artWorks.status ? artSoldOrNot() : 
+                ${artWorks.status ? artSoldOrNot(artWorks.status) : 
                     `
                     <a href="https://alexdolara.typeform.com/to/${artWorks.typeformID}?id=${artWorks.typeformID}&title=${whiteSpaceTitle(artWorks.artworkTitle)}&colors=${artWorks.colors}&artsize=${artWorks.artSize}&framesize=${artWorks.frameSize}&paperquality=${artWorks.paperQuality}" target="_blank" class="buy__button">${artworkStatus}</a>
                     `
