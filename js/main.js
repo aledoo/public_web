@@ -224,6 +224,7 @@ function artTemplate(art) {
     `
 };
 
+// Build the HTML for the page
 document.getElementById("app").innerHTML = `
     ${artWork.map(artTemplate).join('')}
 `
