@@ -232,11 +232,11 @@ function artTemplate(art) {
 // `
 
 // Fetch JSON
-fetch("data.json") 
+fetch("./data.json") 
     .then(function(resp) {
         return resp.json();
     })
-    .then (function(data) {
+    .then(function(data) {
         // document.getElementById("list").innerHTML = `
         //     ${data.map(artTemplate).join('')}
         // ` 
