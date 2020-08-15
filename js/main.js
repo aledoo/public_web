@@ -182,7 +182,7 @@ fetch("/js/data.json")
         // document.getElementById("list").innerHTML = `
         //     ${data.map(artTemplate).join('')}
         // ` 
-        var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
+        let artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
     })
     .catch(function(error) {
         console.log(error);
