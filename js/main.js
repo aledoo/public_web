@@ -200,7 +200,7 @@ function artSoldOrNot(artworkStatus) {
     if (artworkStatus == "SOLD") {
         return `<span class="sold__button">${artworkStatus}</span>`
     } else {
-        return `<a href="${artWork.map(soldLink).join('')}" target="_blank" class="buy__button">${artworkStatus}</a>`
+        return `<a href="${data.map(soldLink).join('')}" target="_blank" class="buy__button">${artworkStatus}</a>`
     }
 };
 
