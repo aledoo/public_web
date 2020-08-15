@@ -1,4 +1,4 @@
-data = '[
+const data = [
     {
         artworkTitle: "falling in love",
         typeformID: "bi6F9pEy",
@@ -170,4 +170,4 @@ data = '[
         frameSize: "30x40",
         paperQuality: "90"
     } 
-  ]';
+  ]

@@ -237,7 +237,8 @@ fetch("./data.json")
         return resp.json();
     })
     .then (function(data) {
-        document.getElementById("list").innerHTML = `
-            ${data.map(artTemplate).join('')}
-        ` 
+        // document.getElementById("list").innerHTML = `
+        //     ${data.map(artTemplate).join('')}
+        // ` 
+        console.log(data.paperQuality);
     });
