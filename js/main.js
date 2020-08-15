@@ -205,19 +205,19 @@ function artSoldOrNot(artworkStatus) {
 };
 
 // Build the list of artworks
-function artTemplate(json) {
+function artTemplate(artWorks) {
     return `
     <!-- NEW ARTWORK -->
     <div class="art__item">
         <div>
-            <img src="img/artworks/${image(json.artworkTitle)}.jpg" height="350" alt="${json.artworkTitle}" />
+            <img src="img/artworks/${image(artWorks.artworkTitle)}.jpg" height="350" alt="${artWorks.artworkTitle}" />
         </div>
         <div class="art__description">
             <div class="left">
-                <span><strong>${json.artworkTitle}</strong></span>
+                <span><strong>${artWorks.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artSoldOrNot(json.buttonText)}
+                ${artWorks.buttonText}
             </div>
         </div>
     </div>
@@ -238,7 +238,7 @@ fetch("/js/data.json")
         // document.getElementById("list").innerHTML = `
         //     ${data.map(artTemplate).join('')}
         // ` 
-        var json = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
+        var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
     })
     .catch(function(error) {
         console.log(error);
