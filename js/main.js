@@ -182,7 +182,7 @@ fetch("/js/data.json")
         // document.getElementById("list").innerHTML = `
         //     ${data.map(artTemplate).join('')}
         // ` 
-        var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate,soldLink).join('')}`;
+        var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplates).join('')}`;
     })
     .catch(function(error) {
         console.log(error);
@@ -219,20 +219,24 @@ function artSoldOrNot(artworkStatus) {
     }
 };
 
+function artTemplates(text) {
+    var JSON = text
+}
+
 // Build the list of artworks
-function artTemplate(artWorks) {
+function artTemplate(JSON) {
     return `
     <!-- NEW ARTWORK -->
     <div class="art__item">
         <div>
-            <img src="img/artworks/${image(artWorks.artworkTitle)}.jpg" height="350" alt="${artWorks.artworkTitle}" />
+            <img src="img/artworks/${image(JSON.artworkTitle)}.jpg" height="350" alt="${JSON.artworkTitle}" />
         </div>
         <div class="art__description">
             <div class="left">
-                <span><strong>${artWorks.artworkTitle}</strong></span>
+                <span><strong>${JSON.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artSoldOrNot(artWorks.buttonText)}
+                ${artSoldOrNot(JSON.buttonText)}
             </div>
         </div>
     </div>
