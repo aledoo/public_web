@@ -189,9 +189,9 @@ function artworkSold(soldText) {
 };
 
 // Build the link for selling artwork
-function soldLink(soldParams) {
+function soldLink(json) {
     return `
-        https://alexdolara.typeform.com/to/${soldParams.typeformID}?id=${soldParams.typeformID}&title=${whiteSpaceTitle(soldParams.artworkTitle)}&colors=${soldParams.colors}&artsize=${soldParams.artSize}&framesize=${soldParams.frameSize}&paperquality=${soldParams.paperQuality}"
+        https://alexdolara.typeform.com/to/${json.typeformID}?id=${json.typeformID}&title=${whiteSpaceTitle(json.artworkTitle)}&colors=${json.colors}&artsize=${json.artSize}&framesize=${json.frameSize}&paperquality=${json.paperQuality}"
     `
 };
 
@@ -205,19 +205,19 @@ function artSoldOrNot(artworkStatus) {
 };
 
 // Build the list of artworks
-function artTemplate(art) {
+function artTemplate(json) {
     return `
     <!-- NEW ARTWORK -->
     <div class="art__item">
         <div>
-            <img src="img/artworks/${image(art.artworkTitle)}.jpg" height="350" alt="${art.artworkTitle}" />
+            <img src="img/artworks/${image(json.artworkTitle)}.jpg" height="350" alt="${json.artworkTitle}" />
         </div>
         <div class="art__description">
             <div class="left">
-                <span><strong>${art.artworkTitle}</strong></span>
+                <span><strong>${json.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${art.buttonText}
+                ${json.buttonText}
             </div>
         </div>
     </div>
@@ -238,7 +238,7 @@ fetch("/js/data.json")
         // document.getElementById("list").innerHTML = `
         //     ${data.map(artTemplate).join('')}
         // ` 
-        document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
+        var json = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
     })
     .catch(function(error) {
         console.log(error);
