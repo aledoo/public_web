@@ -182,7 +182,7 @@ fetch("/js/data.json")
         // document.getElementById("list").innerHTML = `
         //     ${data.map(artTemplate).join('')}
         // ` 
-        var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
+        document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
     })
     .catch(function(error) {
         console.log(error);
@@ -205,8 +205,7 @@ function artworkSold(soldText) {
 
 // Build the link for selling artwork
 function soldLink(artWorks) {
-    return `
-        https://alexdolara.typeform.com/to/?id=&title=${whiteSpaceTitle(artWorks.artworkTitle)}&colors=${artWorks.colors}&artsize=${artWorks.artSize}&framesize=${artWorks.frameSize}&paperquality=${artWorks.paperQuality}"
+    return `HOLA
     `
 };
 
