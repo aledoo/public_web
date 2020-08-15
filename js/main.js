@@ -179,8 +179,10 @@ fetch("/js/data.json")
         return resp.json();
     })
     .then(function(data) {
-        document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
-        return `${data.map(soldLink).join('')}`;
+        // document.getElementById("list").innerHTML = `
+        //     ${data.map(artTemplate).join('')}
+        // ` 
+        var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
     })
     .catch(function(error) {
         console.log(error);
@@ -230,7 +232,7 @@ function artTemplate(artWorks) {
                 <span><strong>${artWorks.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artSoldOrNot(artWorks.buttonText)}
+                <a href="https://alexdolara.typeform.com/to/${artWorks.typeformID}?id=${artWorks.typeformID}&title=${whiteSpaceTitle(artWorks.artworkTitle)}&colors=${artWorks.colors}&artsize=${artWorks.artSize}&framesize=${artWorks.frameSize}&paperquality=${artWorks.paperQuality}" target="_blank" class="buy__button">${artWorks.buttonText}</a>
             </div>
         </div>
     </div>
