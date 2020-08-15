@@ -183,6 +183,28 @@ function whiteSpaceTitle(title) {
     return title.replace(/\s/g, '%20')
 };
 
+// Build the link for sold artwork
+function artworkSold(soldText) {
+    return `<span class="sold__button">${soldText}</span>`
+};
+
+// Build the link for selling artwork
+function soldLink(soldParams) {
+    return `
+        https://alexdolara.typeform.com/to/${soldParams.typeformID}?id=${soldParams.typeformID}&title=${whiteSpaceTitle(soldParams.artworkTitle)}&colors=${soldParams.colors}&artsize=${soldParams.artSize}&framesize=${soldParams.frameSize}&paperquality=${soldParams.paperQuality}"
+    `
+};
+
+// Check if the artwork is sold or not
+function artSoldOrNot(artworkStatus) {
+    if (artworkStatus == "SOLD") {
+        return `<span class="sold__button">${artworkStatus}</span>`
+    } else {
+        return `<a href="${artWork.map(soldLink).join('')}" target="_blank" class="buy__button">${artworkStatus}</a>`
+    }
+};
+
+// Build the list of artworks
 function artTemplate(art) {
     return `
     <!-- NEW ARTWORK -->
@@ -195,7 +217,7 @@ function artTemplate(art) {
                 <span><strong>${art.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                <a href="https://alexdolara.typeform.com/to/${art.typeformID}?id=${art.typeformID}&title=${whiteSpaceTitle(art.artworkTitle)}&colors=${art.colors}&artsize=${art.artSize}&framesize=${art.frameSize}&paperquality=${art.paperQuality}" target="_blank" class="buy__button">${art.buttonText}</a>
+                ${artSoldOrNot(art.buttonText)}
             </div>
         </div>
     </div>
