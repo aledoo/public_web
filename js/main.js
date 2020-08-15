@@ -204,7 +204,7 @@ function artworkSold(soldText) {
 };
 
 // Build the link for selling artwork
-function soldLink(artWorks) {
+function soldLink() {
     return `
         https://alexdolara.typeform.com/to/${artWorks.typeformID}?id=${artWorks.typeformID}&title=${whiteSpaceTitle(artWorks.artworkTitle)}&colors=${artWorks.colors}&artsize=${artWorks.artSize}&framesize=${artWorks.frameSize}&paperquality=${artWorks.paperQuality}"
     `
