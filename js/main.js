@@ -179,7 +179,7 @@ fetch("./data.json")
         return resp.json();
     })
     .then (function(data) {
-        document.getElementById("detail").innerHTML = `
+        document.getElementById("list").innerHTML = `
             ${artWork.map(artTemplate).join('')}
         ` 
     });
@@ -236,42 +236,6 @@ function artTemplate(art) {
 };
 
 // Build the artwork list
-document.getElementById("list").innerHTML = `
-    ${artWork.map(artTemplate).join('')}
-`
-
-
-
-
-
-
-
-
-
-
-
-// Build detail artwork
-function artTemplate(art) {
-    return `
-    <!-- NEW ARTWORK -->
-    <div class="art__item">
-        <div>
-            <img src="img/artworks/${image(art.artworkTitle)}.jpg" height="350" alt="${art.artworkTitle}" />
-        </div>
-        <div class="art__description">
-            <div class="left">
-                <span><strong>${art.artworkTitle}</strong></span>
-            </div>
-            <div class="right">
-                ${artSoldOrNot(art.buttonText)}
-            </div>
-        </div>
-    </div>
-    `
-};
-
-
-// Build the artwork detail
-document.getElementById("detail").innerHTML = `
-    ${artWork.map(artTemplate).join('')}
-`
+// document.getElementById("list").innerHTML = `
+//     ${artWork.map(artTemplate).join('')}
+// `
