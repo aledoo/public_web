@@ -217,7 +217,7 @@ function artTemplate(art) {
                 <span><strong>${art.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artSoldOrNot(art.buttonText)}
+                ${art.buttonText}
             </div>
         </div>
     </div>
@@ -238,7 +238,6 @@ fetch("/js/data.json")
         // document.getElementById("list").innerHTML = `
         //     ${data.map(artTemplate).join('')}
         // ` 
-        console.log(data);
         document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
     })
     .catch(function(error) {
