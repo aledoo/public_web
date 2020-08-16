@@ -54,7 +54,7 @@ function artTemplate(art) {
                 <span><strong>${art.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artworkSold(art)}
+                ${soldTextButtonChange(art)}
             </div>
         </div>
     </div>
