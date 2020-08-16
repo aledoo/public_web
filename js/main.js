@@ -37,10 +37,10 @@ function soldLink(linkParams) {
 
 // Check if the artwork is sold or not
 function artSoldOrNot(artworkStatus) {
-    if (artworkStatus.typeformID == "SOLD") {
+    if (artworkStatus.buttonText == "SOLD") {
         return `<span class="sold__button">${artworkStatus}</span>`
     } else {
-        return `<a href="${soldLink(artworkStatus.typeformID, artworkStatus.artworkTitle, artworkStatus.colors, artworkStatus.artSize, artworkStatus.frameSize, artworkStatus.paperQuality)}" target="_blank" class="buy__button">${artworkStatus}</a>`
+        return `<a href="${soldLink(artworkStatus.typeformID, artworkStatus.artworkTitle, artworkStatus.colors, artworkStatus.artSize, artworkStatus.frameSize, artworkStatus.paperQuality)}" target="_blank" class="buy__button">${artworkStatus.buttonText}</a>`
     }
 };
 
@@ -57,7 +57,7 @@ function artTemplate(artWorks) {
                 <span><strong>${artWorks.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artSoldOrNot(artWorks.buttonText,artWorks.typeformID,artWorks.artworkTitle,artWorks.colors, artWorks.artSize, artWorks.frameSize, artWorks.paperQuality)}
+                ${artSoldOrNot(artWorks.buttonText, artWorks.typeformID, artWorks.artworkTitle, artWorks.colors, artWorks.artSize, artWorks.frameSize, artWorks.paperQuality)}
             </div>
         </div>
     </div>
