@@ -33,7 +33,7 @@ function soldLink(typeformID, artworkTitle, colors, artSize, frameSize, paperQua
 };
 
 // Check if the artwork is sold or not
-function artSoldOrNot(buttonText, typeformID, artworkTitle, colors, frameSize, paperQuality) {
+function artSoldOrNot(buttonText, typeformID, artworkTitle, colors, artSize, frameSize, paperQuality) {
     if (buttonText == "SOLD") {
         return `<span class="sold__button">${buttonText}</span>`
     } else {
