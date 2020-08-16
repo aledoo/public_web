@@ -1,5 +1,5 @@
 // Fetch JSON
-fetch("/js/data_test.json") 
+fetch("/js/data.json") 
     .then(function(resp) {
         return resp.json();
     })
@@ -26,18 +26,18 @@ function artworkSold(soldText) {
 };
 
 // Build the link for selling artwork
-function soldLink(linkParams) {
+function soldLink(typeformID, artworkTitle, colors, artSize, frameSize, paperQuality) {
     return `
-        https://alexdolara.typeform.com/to/${linkParams.typeformID}?id=${linkParams.typeformID}&title=${whiteSpaceTitle(linkParams.artworkTitle)}&colors=${linkParams.colors}&artsize=${linkParams.artSize}&framesize=${linkParams.frameSize}&paperquality=${linkParams.paperQuality}"
+        https://alexdolara.typeform.com/to/${typeformID}?id=${typeformID}&title=${whiteSpaceTitle(artworkTitle)}&colors=${colors}&artsize=${artSize}&framesize=${frameSize}&paperquality=${paperQuality}"
     `
 };
 
 // Check if the artwork is sold or not
-function artSoldOrNot(x,y, z) {
-    if (x == "SOLD") {
-        return `<span class="sold__button">${x}</span>`
+function artSoldOrNot(buttonText, typeformID, artworkTitle, colors, frameSize, paperQuality) {
+    if (buttonText == "SOLD") {
+        return `<span class="sold__button">${buttonText}</span>`
     } else {
-        return `<a href="${soldLink(y, z)}" target="_blank" class="buy__button">${x}</a>`
+        return `<a href="${soldLink(typeformID, artworkTitle, colors, artSize, frameSize, paperQuality)}" target="_blank" class="buy__button">${buttonText}</a>`
     }
 };
 
