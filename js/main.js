@@ -33,11 +33,11 @@ function soldLink(linkParams) {
 };
 
 // Check if the artwork is sold or not
-function artSoldOrNot(artworkStatus) {
-    if (artworkStatus.buttonText == "SOLD") {
-        return `<span class="sold__button">${artworkStatus.buttonText}</span>`
+function artSoldOrNot(x,y, z) {
+    if (x == "SOLD") {
+        return `<span class="sold__button">${x}</span>`
     } else {
-        return `<a href="${soldLink(artworkStatus.typeformID, artworkStatus.artworkTitle, artworkStatus.colors, artworkStatus.artSize, artworkStatus.frameSize, artworkStatus.paperQuality)}" target="_blank" class="buy__button">${artworkStatus.buttonText}</a>`
+        return `<a href="${soldLink(y, z)}" target="_blank" class="buy__button">${x}</a>`
     }
 };
 
