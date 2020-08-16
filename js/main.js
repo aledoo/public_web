@@ -42,27 +42,21 @@ function artSoldOrNot(buttonText, typeformID, artworkTitle, colors, artSize, fra
 };
 
 // Build the list of artworks
-function artTemplate(artWorks) {
+function artTemplate(art) {
     return `
     <!-- NEW ARTWORK -->
     <div class="art__item">
         <div>
-            <img src="img/artworks/${image(artWorks.artworkTitle)}.jpg" height="350" alt="${artWorks.artworkTitle}" />
+            <img src="img/artworks/${image(art.artworkTitle)}.jpg" height="350" alt="${art.artworkTitle}" />
         </div>
         <div class="art__description">
             <div class="left">
-                <span><strong>${artWorks.artworkTitle}</strong></span>
+                <span><strong>${art.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artSoldOrNot(artWorks.buttonText, artWorks.typeformID, artWorks.artworkTitle, artWorks.colors, artWorks.artSize, artWorks.frameSize, artWorks.paperQuality)}
+                ${artSoldOrNot(art.buttonText, art.typeformID, art.artworkTitle, art.colors, art.artSize, art.frameSize, art.paperQuality)}
             </div>
         </div>
     </div>
     `
 };
-
-// Build the artwork list
-// document.getElementById("list").innerHTML = `
-//     ${artWork.map(artTemplate).join('')}
-// `
-
