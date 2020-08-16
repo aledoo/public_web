@@ -57,7 +57,7 @@ function artTemplate(artWorks) {
                 <span><strong>${artWorks.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artSoldOrNot(artWorks.buttonText, artWorks.typeformID, artWorks.artworkTitle, artWorks.colors, artWorks.artSize, artWorks.frameSize, artWorks.paperQuality)}
+                ${artSoldOrNot(artWorks.buttonText,artWorks.typeformID,artWorks.artworkTitle,artWorks.colors, artWorks.artSize, artWorks.frameSize, artWorks.paperQuality)}
             </div>
         </div>
     </div>
