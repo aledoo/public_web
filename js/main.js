@@ -1,12 +1,9 @@
 // Fetch JSON
-fetch("/js/data.json") 
+fetch("/js/data_test.json") 
     .then(function(resp) {
         return resp.json();
     })
     .then(function(data) {
-        // document.getElementById("list").innerHTML = `
-        //     ${data.map(artTemplate).join('')}
-        // ` 
         var artWorks = document.getElementById("list").innerHTML = `${data.map(artTemplate).join('')}`;
     })
     .catch(function(error) {
