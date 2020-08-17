@@ -26,18 +26,18 @@ function artworkSold(soldText) {
 };
 
 // Build the link for selling artwork
-function soldLink(typeformID, artworkTitle, colors, artSize, frameSize, paperQuality) {
+function soldLink(addParameters) {
     return `
-        https://alexdolara.typeform.com/to/${typeformID}?id=${typeformID}&title=${whiteSpaceTitle(artworkTitle)}&colors=${colors}&artsize=${artSize}&framesize=${frameSize}&paperquality=${paperQuality}"
+        https://alexdolara.typeform.com/to/${addParameters.typeformID}?id=${addParameters.typeformID}&title=${whiteSpaceTitle(addParameters.artworkTitle)}&colors=${addParameters.colors}&artsize=${addParameters.artSize}&framesize=${addParameters.frameSize}&paperquality=${addParameters.paperQuality}"
     `
 };
 
 // Check if the artwork is sold or not
-function artSoldOrNot(buttonText, typeformID, artworkTitle, colors, artSize, frameSize, paperQuality) {
-    if (buttonText == "SOLD") {
-        return `<span class="sold__button">${buttonText}</span>`
+function soldTextButtonChange(textChange) {
+    if (textChange.buttonText == "SOLD") {
+        return `<span class="sold__button">${textChange.buttonText}</span>`
     } else {
-        return `<a href="${soldLink(typeformID, artworkTitle, colors, artSize, frameSize, paperQuality)}" target="_blank" class="buy__button">${buttonText}</a>`
+        return `<a href="${soldLink(textChange)}" target="_blank" class="buy__button">${textChange.buttonText}</a>`
     }
 };
 
@@ -54,7 +54,7 @@ function artTemplate(art) {
                 <span><strong>${art.artworkTitle}</strong></span>
             </div>
             <div class="right">
-                ${artSoldOrNot(art.buttonText, art.typeformID, art.artworkTitle, art.colors, art.artSize, art.frameSize, art.paperQuality)}
+                ${soldTextButtonChange(art)}
             </div>
         </div>
     </div>
