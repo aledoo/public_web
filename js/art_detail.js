@@ -44,7 +44,7 @@ function soldTextButtonChange(textChange) {
 // Build the list of artworks
 function artDetail(art) {
     var docTitle = document.title;
-    var artWorkTitle = art.artWorkTitle
+    var artWorkTitle = art.artWorkTitle;
     if (docTitle == artWorkTitle) {
         return `
         <div class="art__item__detail">
