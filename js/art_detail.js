@@ -43,25 +43,29 @@ function soldTextButtonChange(textChange) {
 
 // Build the list of artworks
 function artDetail(art) {
-    return `
-    <div class="art__item__detail">
-        <img src="img/artworks/${image(art.artworkTitle)}.jpg" height="350" alt="${(art.artworkTitle)}" />
-		<div class="art_item_description">
-            <span class="item__art__title">${art.artworkTitle}</span>
-            <span class="item__art__subtitle">Details / Detalles:</span>
-            <div class="art__item__deep_description">
-                <ul>
-                    <li>Colors / Colores: <i>${art.colors}</i></li>
-                    <li>Art size / Tamaño obra: <i>${art.artSize}</i> cms</li>
-                    <li>Frame size / Tamaño cuadro: <i>${art.frameSize}</i> cms</li>
-                    <li>Paper / Papel: <i>${art.paperQuality}</i> g/m²</li>
-                </ul>
-            </div>
-            <div class="art__item__button">
-                ${soldTextButtonChange(art)}
+    var docTitle = document.title;
+    if (docTitle == includes(art.artworkTitle) {
+        return `
+        <div class="art__item__detail">
+            <img src="img/artworks/${image(art.artworkTitle)}.jpg" height="350" alt="${(art.artworkTitle)}" />
+            <div class="art_item_description">
+                <span class="item__art__title">${art.artworkTitle}</span>
+                <span class="item__art__subtitle">Details / Detalles:</span>
+                <div class="art__item__deep_description">
+                    <ul>
+                        <li>Colors / Colores: <i>${art.colors}</i></li>
+                        <li>Art size / Tamaño obra: <i>${art.artSize}</i> cms</li>
+                        <li>Frame size / Tamaño cuadro: <i>${art.frameSize}</i> cms</li>
+                        <li>Paper / Papel: <i>${art.paperQuality}</i> g/m²</li>
+                    </ul>
+                </div>
+                <div class="art__item__button">
+                    ${soldTextButtonChange(art)}
+                </div>
             </div>
         </div>
-    </div>
-
-    `
+        `
+    } else {
+        return "Nothing to show."
+    }
 };
