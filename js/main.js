@@ -47,9 +47,9 @@ function dashLink(title) {
 };
 
 // Art item detail link
-function artDetailLink(addParameters) {
+function artDetailLink(link) {
     return `
-        http://alexdolara.com/${dashLink(addParameters.artworkTitle)}.html"
+        http://alexdolara.com//art-details/${dashLink(link)}.html"
     `
 };
 
@@ -64,7 +64,7 @@ function artTemplate(art) {
         <div class="art__description">
             <div class="left">
                 <span><strong>${art.artworkTitle}</strong></span>
-                <a href="/art-details/${artDetailLink(art)}" class="art__details__link">Artwork details</a>
+                <a href="${artDetailLink(art.artworkTitle)}" class="art__details__link">Artwork details</a>
             </div>
             <div class="right">
                 ${soldTextButtonChange(art)}
