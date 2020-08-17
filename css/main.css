@@ -126,11 +126,12 @@ a {
 }
 .left {
     margin: 5px 0;
+    padding: 10px;
     text-align: left;
     font-size: 14px;
     color: #353535;
     width: 170px;
-    align: top;
+    vertical-align: top;
 }
 .left::first-letter {
     text-transform: capitalize;
