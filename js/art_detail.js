@@ -68,4 +68,7 @@ function artDetail(art) {
     } else {
         return `Nothing to show.`
     }
+    .catch(function(error) {
+        console.log(error);
+    })
 };
