@@ -66,6 +66,6 @@ function artDetail(art) {
         </div>
         `
     } else {
-        return "Nothing to show."
+        return `Nothing to show.`
     }
 };
