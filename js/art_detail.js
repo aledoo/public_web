@@ -47,7 +47,7 @@ function artDetail(art) {
     if (docTitle == art.artworkTitle) {
         return `
         <div class="art__item__detail">
-            <img src="img/artworks/${image(art.artworkTitle)}.jpg" height="350" alt="${(art.artworkTitle)}" />
+            <img src="../img/artworks/${image(art.artworkTitle)}.jpg" height="350" alt="${(art.artworkTitle)}" />
             <div class="art_item_description">
                 <span class="item__art__title">${art.artworkTitle}</span>
                 <span class="item__art__subtitle">Details:</span>
