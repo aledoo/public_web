@@ -65,8 +65,6 @@ function artDetail(art) {
             </div>
         </div>
         `
-    } else {
-        return `Nothing to show.`
     }
     .catch(function(error) {
         console.log(error);
