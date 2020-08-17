@@ -36,7 +36,6 @@ a {
     color: black;
 }
 
-a:hover
 /* TOP */
 
 .top__menu {
@@ -132,14 +131,25 @@ a:hover
     font-size: 14px;
     color: #353535;
     width: 170px;
+    align: top;
 }
 .left::first-letter {
     text-transform: capitalize;
 }
+.art__details__link {
+    display: block;
+    padding-bottom: 0.3rem;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1C242B;  
+}
+.art__details__link a:hover {
+    text-decoration: underline;
+}
 .right {
     margin: 10px;
     text-align: right;
-    width: 235px;
+    width: 135px;
 }
 
 .buy__button {

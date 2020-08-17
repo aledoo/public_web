@@ -41,6 +41,18 @@ function soldTextButtonChange(textChange) {
     }
 };
 
+// Include dash in title link
+function dashLink(title) {
+    return title.replace(/\s/g, '-')
+};
+
+// Art item detail link
+function artDetailLink(addParameters) {
+    return `
+        http://alexdolara.com/${dashLink(addParameters.artworkTitle)}.html"
+    `
+};
+
 // Build the list of artworks
 function artTemplate(art) {
     return `
@@ -52,10 +64,10 @@ function artTemplate(art) {
         <div class="art__description">
             <div class="left">
                 <span><strong>${art.artworkTitle}</strong></span>
+                <a href="${artDetailLink(art)}" class="art__details__link">Details / Detalles</a>
             </div>
             <div class="right">
-                ${soldTextButtonChange(art)} 
-                <a href="${soldLink(art)}" class="buy__button">...</a>
+                ${soldTextButtonChange(art)}
             </div>
         </div>
     </div>
