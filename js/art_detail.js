@@ -50,13 +50,13 @@ function artDetail(art) {
             <img src="img/artworks/${image(art.artworkTitle)}.jpg" height="350" alt="${(art.artworkTitle)}" />
             <div class="art_item_description">
                 <span class="item__art__title">${art.artworkTitle}</span>
-                <span class="item__art__subtitle">Details / Detalles:</span>
+                <span class="item__art__subtitle">Details:</span>
                 <div class="art__item__deep_description">
                     <ul>
-                        <li>Colors / Colores: <i>${art.colors}</i></li>
-                        <li>Art size / Tamaño obra: <i>${art.artSize}</i> cms</li>
-                        <li>Frame size / Tamaño cuadro: <i>${art.frameSize}</i> cms</li>
-                        <li>Paper / Papel: <i>${art.paperQuality}</i> g/m²</li>
+                        <li>Colors: <i>${art.colors}</i></li>
+                        <li>Art size: <i>${art.artSize}</i> cms</li>
+                        <li>Frame size: <i>${art.frameSize}</i> cms</li>
+                        <li>Paper quality: <i>${art.paperQuality}</i> g/m²</li>
                     </ul>
                 </div>
                 <div class="art__item__button">
