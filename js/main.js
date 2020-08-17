@@ -55,6 +55,11 @@ function artTemplate(art) {
             </div>
             <div class="right">
                 ${soldTextButtonChange(art)}
+                <div>
+                    <a href="" class="">
+                        <img src="img/icons/details.svg" height="30" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
