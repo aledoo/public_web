@@ -64,7 +64,7 @@ function artTemplate(art) {
         <div class="art__description">
             <div class="left">
                 <span><strong>${art.artworkTitle}</strong></span>
-                <a href="${artDetailLink(art)}" class="art__details__link">Artwork details</a>
+                <a href="/art-details/${artDetailLink(art)}" class="art__details__link">Artwork details</a>
             </div>
             <div class="right">
                 ${soldTextButtonChange(art)}
