@@ -49,7 +49,7 @@ function dashLink(title) {
 // Art item detail link
 function artDetailLink(link) {
     return `
-        http://alexdolara.com//art-details/${dashLink(link)}.html"
+        http://alexdolara.com/art-details/${dashLink(link)}.html
     `
 };
 
