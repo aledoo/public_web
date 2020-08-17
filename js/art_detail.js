@@ -44,8 +44,8 @@ function soldTextButtonChange(textChange) {
 // Build the list of artworks
 function artDetail(art) {
     var docTitle = document.title;
-    var artWorkTitle = art.artWorkTitle;
-    if (docTitle == includes(artWorkTitle)) {
+    var artWorkTitle = art.artWorkTitle
+    if (docTitle == artWorkTitle) {
         return `
         <div class="art__item__detail">
             <img src="img/artworks/${image(art.artworkTitle)}.jpg" height="350" alt="${(art.artworkTitle)}" />
