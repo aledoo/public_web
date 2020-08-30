@@ -1,4 +1,68 @@
+/* SOLD = KvB1gPgE */
 [
+    {
+        "artworkTitle": "lollipop and balloons",
+        "typeformID": "cM3Y95zM",
+        "buttonText": "BUY 100€",
+        "colors": "28",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
+    {
+        "artworkTitle": "mujer en la ventana",
+        "typeformID": "W5h3KVDB",
+        "buttonText": "BUY 100€",
+        "colors": "18",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
+    {
+        "artworkTitle": "cat",
+        "typeformID": "QPpcP7G5",
+        "buttonText": "BUY 100€",
+        "colors": "35",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
+    {
+        "artworkTitle": "los caprichos",
+        "typeformID": "RYflgCUk",
+        "buttonText": "BUY 100€",
+        "colors": "32",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
+    {
+        "artworkTitle": "crazy happy horse",
+        "typeformID": "uTaWQTfb",
+        "buttonText": "BUY 100€",
+        "colors": "23",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
+    {
+        "artworkTitle": "daughter",
+        "typeformID": "kIQOdFD9",
+        "buttonText": "BUY 100€",
+        "colors": "28",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
+    {
+        "artworkTitle": "king falling",
+        "typeformID": "Yz0yEM93",
+        "buttonText": "BUY 100€",
+        "colors": "29",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
     {
         "artworkTitle": "falling in love",
         "typeformID": "bi6F9pEy",
@@ -64,7 +128,7 @@
     },
     {
         "artworkTitle": "portrait",
-        "typeformID": "LTflaQ",
+        "typeformID": "KvB1gPgE",
         "buttonText": "SOLD",
         "colors": "25",
         "artSize": "21x29,7",
@@ -73,7 +137,7 @@
     },
     {
         "artworkTitle": "rider",
-        "typeformID": "LTflaQ",
+        "typeformID": "KvB1gPgE",
         "buttonText": "SOLD",
         "colors": "25",
         "artSize": "21x29,7",
@@ -118,7 +182,7 @@
     },
     {
         "artworkTitle": "shirts",
-        "typeformID": "LTflaQ",
+        "typeformID": "KvB1gPgE",
         "buttonText": "SOLD",
         "colors": "25",
         "artSize": "21x29,7",
@@ -127,7 +191,7 @@
     },
     {
         "artworkTitle": "jordan",
-        "typeformID": "LTflaQ",
+        "typeformID": "KvB1gPgE",
         "buttonText": "SOLD",
         "colors": "25",
         "artSize": "21x29,7",
@@ -136,7 +200,7 @@
     },
     {
         "artworkTitle": "the pianist",
-        "typeformID": "LTflaQ",
+        "typeformID": "KvB1gPgE",
         "buttonText": "SOLD",
         "colors": "25",
         "artSize": "21x29,7",
@@ -145,7 +209,7 @@
     },
     {
         "artworkTitle": "tango",
-        "typeformID": "LTflaQ",
+        "typeformID": "KvB1gPgE",
         "buttonText": "SOLD",
         "colors": "",
         "artSize": "",
@@ -154,7 +218,7 @@
     },
     {
         "artworkTitle": "cats",
-        "typeformID": "LTflaQ",
+        "typeformID": "KvB1gPgE",
         "buttonText": "SOLD",
         "colors": "",
         "artSize": "",
@@ -163,7 +227,7 @@
     },
     {
         "artworkTitle": "women",
-        "typeformID": "LTflaQ",
+        "typeformID": "KvB1gPgE",
         "buttonText": "SOLD",
         "colors": "25",
         "artSize": "21x29,7",
