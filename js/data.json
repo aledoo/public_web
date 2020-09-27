@@ -1,5 +1,14 @@
 [
     {
+        "artworkTitle": "le petit prince",
+        "typeformID": "EGQeGDKp",
+        "buttonText": "BUY 100€",
+        "colors": "35",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
+    {
         "artworkTitle": "don quixote",
         "typeformID": "pZCX2jEY",
         "buttonText": "BUY 100€",
