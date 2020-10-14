@@ -1,5 +1,32 @@
 [
     {
+        "artworkTitle": "live music",
+        "typeformID": "KvB1gPgE",
+        "buttonText": "SOLD",
+        "colors": "40",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "120"
+    },
+    {
+        "artworkTitle": "fishing",
+        "typeformID": "KvB1gPgE",
+        "buttonText": "SOLD",
+        "colors": "32",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
+    {
+        "artworkTitle": "flowers",
+        "typeformID": "KvB1gPgE",
+        "buttonText": "SOLD",
+        "colors": "37",
+        "artSize": "21x29,7",
+        "frameSize": "30x40",
+        "paperQuality": "90"
+    },
+    {
         "artworkTitle": "le petit prince",
         "typeformID": "KvB1gPgE",
         "buttonText": "SOLD",
