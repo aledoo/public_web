@@ -27,7 +27,7 @@ function artworkSold(soldText) {
 
 // Build the link for selling artwork
 function soldLink(addParameters) {
-    return `<span class="sold__button">Write me</span>`
+    return ` `
 };
 // https://alexdolara.typeform.com/to/${addParameters.typeformID}?id=${addParameters.typeformID}&title=${whiteSpaceTitle(addParameters.artworkTitle)}&colors=${addParameters.colors}&artsize=${addParameters.artSize}&framesize=${addParameters.frameSize}&paperquality=${addParameters.paperQuality}"
 // Check if the artwork is sold or not
