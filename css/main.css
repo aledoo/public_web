@@ -95,6 +95,9 @@ h1, p, .nav, .logo {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    animation-name: text;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 
 }
 .image-1 {
